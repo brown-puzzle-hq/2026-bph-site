@@ -1,31 +1,31 @@
 /** DO NOT PUT SENSITIVE INFORMATION IN THIS FILE */
 
-export const HUNT_NAME = "Puzzlehunt";
-export const HUNT_DOMAIN = "puzzlehunt.com";
+export const HUNT_NAME = "Brown Puzzlehunt 2026";
+export const HUNT_DOMAIN = "brownpuzzlehunt.com";
 export const HUNT_URL = `https://www.${HUNT_DOMAIN}`;
 
 // This is for Resend, the emailing service
 // Check /src/lib/comms.ts
-export const HUNT_EMAIL = "puzzlehunt@gmail.com";
+export const HUNT_EMAIL = "brownpuzzlehq@gmail.com";
 
 /** TIMING */
 
-export const REGISTRATION_START_TIME = new Date("2024-11-17T17:00:00.000Z");
-export const REGISTRATION_END_TIME = new Date("2030-11-24T17:00:00Z");
+export const REGISTRATION_START_TIME = new Date("2026-01-01T17:00:00.000Z");
+export const REGISTRATION_END_TIME = new Date("2030-01-01T17:00:00Z");
 
 export const IN_PERSON = {
-  KICKOFF_DOOR_TIME: new Date("2024-04-12T15:30:00.000Z"),
-  KICKOFF_TIME: new Date("2024-04-12T16:00:00.000Z"),
-  START_TIME: new Date("2024-04-12T17:30:00.000Z"),
-  END_TIME: new Date("2030-04-13T23:00:00.000Z"),
-  WRAPUP_DOOR_TIME: new Date("2030-04-13T23:30:00.000Z"),
-  WRAPUP_TIME: new Date("2030-04-14T00:00:00Z"),
+  KICKOFF_DOOR_TIME: new Date("2026-04-11T15:30:00.000Z"),
+  KICKOFF_TIME: new Date("2026-04-11T16:00:00.000Z"),
+  START_TIME: new Date("2026-04-11T16:00:00.000Z"), // April 11th, 12 PM
+  END_TIME: new Date("2026-04-12T23:00:00.000Z"), // April 12th,7 PM
+  WRAPUP_DOOR_TIME: new Date("2026-04-12T23:30:00.000Z"),
+  WRAPUP_TIME: new Date("2026-04-13T00:00:00Z"),
 };
 
 export const REMOTE = {
-  START_TIME: new Date("2024-04-19T16:00:00.000Z"),
-  END_TIME: new Date("2030-04-25T16:00:00.000Z"),
-  WRAPUP_TIME: new Date("2030-04-30T17:00:00.000Z"),
+  START_TIME: new Date("2026-04-18T16:00:00.000Z"), // April 18th
+  END_TIME: new Date("2026-04-24T16:00:00.000Z"), // April 24th
+  WRAPUP_TIME: new Date("2026-04-29T17:00:00.000Z"),
 };
 
 /** GUESSES */
@@ -41,14 +41,10 @@ export function sanitizeAnswer(answer: any) {
 
 /** ENUMS AND TYPES */
 
-/** BEGIN_SNIPPET:ROLE_ENUM */
 export const ROLE_VALUES = ["user", "admin", "testsolver"] as const;
-/** END_SNIPPET:ROLE_ENUM */
 export type Role = (typeof ROLE_VALUES)[number];
 
-/** BEGIN_SNIPPET:INTERACTION_MODE_ENUM */
 export const INTERACTION_MODE_VALUES = ["in-person", "remote"] as const;
-/** END_SNIPPET:INTERACTION_MODE_ENUM */
 export type InteractionMode = (typeof INTERACTION_MODE_VALUES)[number];
 
 export const HINT_STATUS_VALUES = [
