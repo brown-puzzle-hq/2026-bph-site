@@ -19,22 +19,19 @@ export default {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
-      /** BEGIN_SNIPPET:COLOR_CONFIG */
       colors: {
         // Main is the primary color of the site
-        "main-bg": "#452c63",
-        "main-text": "#faf7fd", // whiter than it should be, but we need the brightness
-        "main-header": "#e7e3fc",
-        "main-accent": "#d4a7fc",
+        "main-bg": "#3C73D4", // Background
+        "main-text": "#faf7fd", // Basic text
+        "main-header": "#faf7fd", // Header text
+        "main-bottom": "#76AADD", // Bottom gradient
 
-        // Secondary is for text fields
-        "secondary-bg": "#e7e3fc",
-        "secondary-text": colors.gray[300], // This text goes with a dark background
-        "secondary-accent": colors.black, // This text goes with a light background
+        "secondary-bg": "#ffffff", // Background of text field
+        "secondary-text": colors.black, // Text color for text field
 
         // Other backgrounds
-        "footer-bg": "#322046",
-        "nav-bg": "#452c63",
+        "footer-bg": "#76AADD",
+        "nav-bg": "#3C73D4",
         "tooltip-bg": colors.gray[900],
 
         // Other text colors
@@ -44,7 +41,6 @@ export default {
         "incorrect-guess": colors.rose[300],
         error: colors.red[400],
       },
-      /** END_SNIPPET:COLOR_CONFIG */
       typography: ({ theme }: { theme: any }) => ({
         wrapup: {
           css: {

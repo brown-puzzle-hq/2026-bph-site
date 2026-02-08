@@ -18,8 +18,8 @@ export default function PuzzleTable({
           </h2>
           <div className="w-full overflow-hidden rounded-md text-sm font-medium">
             <div className="grid grid-cols-2 p-2">
-              <p className="text-secondary-text">Puzzle</p>
-              <p className="text-secondary-text">Answer</p>
+              <p className="text-main-text">Puzzle</p>
+              <p className="text-main-text">Answer</p>
             </div>
             {availablePuzzles
               .filter((puzzle) => round.puzzles.includes(puzzle.id))

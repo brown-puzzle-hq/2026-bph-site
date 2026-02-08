@@ -15,7 +15,11 @@ const shortFormatter = new Intl.DateTimeFormat("en-US", {
 
 export default function Landing() {
   return (
-    <div className="h-[calc(100vh-32px)]">
+    <div className="relative grid overflow-hidden">
+      <img
+        className="mt-14 min-h-[125vh] w-screen object-cover"
+        src="/home/background.png"
+      />
       <div className="absolute bottom-8 left-1/2 grid w-full -translate-x-1/2 transform grid-cols-3 gap-x-4 gap-y-8 p-4 text-center lg:bottom-16 lg:w-3/4 lg:grid-cols-3 lg:text-lg xl:bottom-32 xl:text-xl">
         <div className="space-y-2">
           <h1 className="text-main-header lg:text-2xl xl:text-3xl">What?</h1>

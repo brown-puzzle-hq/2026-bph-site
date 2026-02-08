@@ -153,9 +153,9 @@ export default async function Home() {
         defaultValue={session?.user?.interactionMode ?? "in-person"}
         className="w-full"
       >
-        <TabsList className="grid w-full grid-cols-2 space-x-1 bg-footer-bg text-[#6c518e]">
+        <TabsList className="grid w-full grid-cols-2 space-x-1 bg-footer-bg text-main-text">
           <TabsTrigger
-            className="data-[state=active]:bg-[#5e437e] data-[state=active]:text-main-text"
+            className="data-[state=active]:bg-main-bg data-[state=active]:text-main-text"
             value="in-person"
           >
             In-Person
@@ -164,7 +164,7 @@ export default async function Home() {
             )}
           </TabsTrigger>
           <TabsTrigger
-            className="data-[state=active]:bg-[#5e437e] data-[state=active]:text-main-text"
+            className="data-[state=active]:bg-main-bg data-[state=active]:text-main-text"
             value="remote"
           >
             Remote
