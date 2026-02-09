@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "prebuild": "pnpm run generate:docs && pnpm run check:folders",
+    "prebuild": "pnpm run check:folders",
     "build": "next build",
     "predev": "pnpm run check:folders",
     "dev": "next dev",
