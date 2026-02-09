@@ -2,7 +2,7 @@ import { puzzleId, solutionBody } from "./data";
 import DefaultHeader from "~/app/(hunt)/puzzle/components/puzzle/DefaultHeader";
 
 export const metadata = {
-  title: "Example 2 - Puzzlehunt",
+  title: "Example 2 - Brown Puzzlehunt 2026",
 };
 
 export default async function RootLayout({
